@@ -1,0 +1,14 @@
+#medicine{
+	margin-left:-0.95em;
+}
+#Medicinename1{
+	margin-left:-1em;
+}
+@media (max-width:502px) {
+	#Medicinename1{
+	margin-left:0em;
+}
+	#medicine{
+	margin-left:0em;
+}
+}

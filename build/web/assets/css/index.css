@@ -1,0 +1,259 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {margin: 0;
+     padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html {
+	height: 100%;
+	/*Image only BG fallback*/
+	
+}
+
+body {
+	font-family: montserrat, arial, verdana;
+    height: 100%;
+    }
+
+.sect{
+	height: 100%;
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.subSect{
+        
+	height: 60%;
+	background-color: white;
+}
+
+.sectOne{
+	background-image: url("../img/image1.png");
+    margin-top:auto;
+    height: 100%;
+    
+}
+
+.subSectOne{
+    height: 5%;
+	background-color: white;
+    text-align: center;
+}
+
+.sectTwo{
+	background-image: url("../img/image2.jpg");
+}
+
+
+.move {
+  top: -60px;
+}
+
+.container {
+
+    display: table;
+    table-layout: fixed; /*euqal column width*/
+    width: 100%;
+
+
+}
+
+.cont {
+    display:inline-flex; margin-left: 17em;
+    width: 100%; text-align: center;
+}
+
+.container > div {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+
+}
+
+
+.section-title hr{
+  border-color: #fcac45;
+  border-width: 4px;
+  width: 189px;
+  margin-top: 0.54px;
+  margin-left: 43%;
+  float: left;
+  clear: both;
+}
+
+.boxed-grey {
+  background: #eee;
+  padding: 20px;
+}
+
+.team h5 {
+  margin-bottom: 10px;
+  margin-left: 15%;
+}
+
+.team p.subtitle {
+  margin-bottom: 10px;
+  margin-left: 20%;
+}
+
+.avatar {
+  margin-bottom: 20px;
+}
+
+
+.img-center {
+    margin: 0 auto;
+}
+
+
+
+/*msform*/
+#msform {
+  width: 700px;
+  margin-left: 50px;
+  margin-top: 10em;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+#msform fieldset {
+  background: transparent;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
+  
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  font-size: 13px;
+}
+#msform input.invalid, #msform textarea.invalid{
+  border: 2px solid red;
+}
+#msform input:focus{
+  border: 2px solid #2C3E50;
+}
+
+/*buttons*/
+#msform .action-button {
+  width: 100px;
+  background: white;
+  font-weight: bold;
+  color: black;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+#msform .action-button:hover, #msform .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+  background-color: #27AE60;
+  color: white;
+}
+/*headings*/
+.fs-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2C3E50;
+  margin-bottom: 10px;
+}
+.fs-subtitle {
+  font-weight: normal;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+
+
+@media (max-width:502px) { /*breakpoint*/
+    .container > div {
+        display: block;
+        border-bottom: double 2px  rgba(0,0,0,.5);
+        border-style: dashed;
+        border-bottom-width:3px;
+
+
+    }
+    .sectOne{
+        height: 150%;
+    }
+
+
+    .section-title hr{
+      border-width: 2px;
+      margin-left: 30.5%;
+    }
+
+    .cont{
+      margin-left:20%; 
+    }
+    .subSect{
+      height: 180%;
+    }
+    #msform{
+     width:500px;
+     margin-top:7em;
+     margin-left: 0;
+    }
+    
+}
+	
+section button {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding: 1.0rem 1.0rem;
+  display: block;
+  background-color: white;
+  border: 1px solid transparent;
+  color: black;
+  font-weight: 300;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+section button:hover {
+  background-color: green;
+  color: white;
+  border-color: white;
+}
+
+
+h3:hover {
+  color: white;
+  border: bold 2px black;
+}
+ .redheart {color:#ff0000; font-size:14px;
+      font-family:'arial unicode MS', arial, geneva, sans-serif;
+}
